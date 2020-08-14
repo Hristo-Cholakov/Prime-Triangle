@@ -9,11 +9,8 @@ public class PrimeTriangle {
         int[] array = new int[n];
         StringBuilder stringBuilder = new StringBuilder();
 
-        for (int i = 0, j = 1; i < n ; i++, j++) {
+        for (int i = 0, j = 1; i < n; i++, j++) {
             array[i] = j;
-
-        }
-        for (int i = 0; i <array.length; i++) {
             if (isPrime(array[i])) {
                 array[i] = 1;
                 stringBuilder.append(String.valueOf(array[i]));
